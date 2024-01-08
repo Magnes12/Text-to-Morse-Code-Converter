@@ -42,7 +42,9 @@ morsed_text = ""
 
 for t in text: 
     if t in alfabet_morse:
-        morsed_text += alfabet_morse[f'{t}'] + " "
+        morsed_text += alfabet_morse[f'{t}'] 
+    else: 
+        morsed_text += " "
 
-print(morsed_text)        
+print(f"Morse: {morsed_text}")        
 
