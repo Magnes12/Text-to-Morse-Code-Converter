@@ -1,12 +1,12 @@
-alfabet_morse = {
-'1': '.----', 
-'2': '..---', 
-'3': '...--', 
-'4': '....-', 
-'5': '.....', 
-'6': '-....', 
+alphabet_morse = {
+'1': '.----',
+'2': '..---',
+'3': '...--',
+'4': '....-',
+'5': '.....',
+'6': '-....',
 '7': '--...',
-'8': '---..', 
+'8': '---..',
 '9': '----.', 
 '0': '-----',
 ' ': ' ',
@@ -49,13 +49,12 @@ alfabet_morse = {
 
 text = input("Type text: ").upper()
 
-morsed_text = ""
+morse_text = ""
 
-for t in text: 
-    if t in alfabet_morse:
-        morsed_text += alfabet_morse[f'{t}'] 
-    else: 
-        morsed_text += " "
+for t in text:
+    if t in alphabet_morse:
+        morse_text += alphabet_morse[f'{t}']
+    else:
+        morse_text += " "
 
-print(f"Morse: {morsed_text}")        
-
+print(f"Morse: {morse_text}")
